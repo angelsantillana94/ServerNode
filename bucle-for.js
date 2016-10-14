@@ -60,6 +60,19 @@ console.log(d);
 function saluda() {
     for(var i=0; i<arguments.length; i++) {
         console.log("Hola, " + arguments[i])
- }
+    }
+    console.log(arguments.length); //numero argumentos
 }
-saluda("angel", "ana", "pedro")
+saluda("angel", "ana", "pedro");
+
+var miArray = [1,2,3,4,5,6,7,8,9]
+var otroArray
+
+console.log(miArray.toString);
+
+var obj3 = {marca: 'audiiii', modelo:'a6', color:'blanco', marchas:10}
+var miString = JSON.stringify(obj3);
+
+//console.log(JSON.parse(JSON.stringify(obj3)));
+
+console.log(JSON.parse(miString));
